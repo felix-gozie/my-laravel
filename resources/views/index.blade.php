@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-100">
     @include('nav.nav_main')
-    <div class="flex flex-wrap gap-4 justify-center mt-4">
+    <div class="flex flex-wrap gap-4 mt-4">
         <div class="hidden md:block ml-[4%]">
             @include('nav.nav_product')
         </div>
