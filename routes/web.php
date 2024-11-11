@@ -21,11 +21,12 @@ Route::get('/formupload', [FileUploadController::class, 'create'])->name('file.u
 Route::post('/formupload', [FileUploadController::class, 'store'])->name('file.upload.store');
 Route::post('/product/upload', [FileUploadController::class, 'upload'])->name('product.upload');
 Route::get('/', [FileUploadController::class, 'showDisplayImage'])->name('index');
-Route::get('/index', [FileUploadController::class, 'showDisplayImage'])->name('index');
+Route::get('/index', [FileUploadController::class, 'showDisplayImage'])->name('index')->middleware('auth');
 
 Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register.page');
 Route::post('/register', [RegisterController::class, 'register'])->name('register');
 
 Route::post('/login', [LoginController::class, 'login'])->name('login');
-Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/loginform', [LoginController::class, 'showLoginForm'])->name('loginform');
+

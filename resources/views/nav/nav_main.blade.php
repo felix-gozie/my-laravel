@@ -43,6 +43,12 @@
                     Logout
                 </a>
             @else
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+                    <i class="fa-solid fa-box mr-2 text-2xl"></i> Orders
+                </a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+                    <i class="fa-solid fa-heart mr-2 text-2xl"></i> Saved Items
+                </a>
                 <a href="/login" class="block px-4 py-2 text-white bg-orange-500 hover:bg-orange-700 shadow-lg rounded-md text-center">
                     Login
                 </a>
