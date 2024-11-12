@@ -206,5 +206,123 @@
         </div>
     </div>
 </div>
+
+
+<!--Mobile view starts here -->
+<div class="block md:hidden mt-14">
+    <div class="flex justify-between items-center py-3 px-4 bg-gray-100 border-b">
+        <a href="myaccount" class="text-gray-800 font-semibold hover:text-orange-500">MY JUMIA ACCOUNT</a>
+        <i class="fa-solid fa-angle-right"></i>
+    </div>
+    <div class="px-4">
+        <a href="orders" class="flex justify-between  block py-3 ">
+            <div class="flex items-center">
+                <i class="fa-solid fa-box mr-2 text-2xl"></i>
+                <div>Orders</div>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="inbox" class="flex justify-between  block py-3 ">
+            <div class="flex items-center">
+                <i class="fa-solid fa-box mr-2 text-2xl"></i>
+                <div>inbox</div>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="#" class="flex justify-between  block py-3 ">
+            <div class="flex items-center">
+                <i class="fa-solid fa-box mr-2 text-2xl"></i>
+                <div>Pending Reviews</div>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="voucher" class="flex justify-between  block py-3 ">
+            <div class="flex items-center">
+                <i class="fa-solid fa-box mr-2 text-2xl"></i>
+                <div>Voucher</div>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="save" class="flex justify-between  block py-3 ">
+            <div class="flex items-center">
+                <i class="fa-solid fa-box mr-2 text-2xl"></i>
+                <div>Save items</div>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="#" class="flex justify-between  block py-3 ">
+            <div class="flex items-center">
+                <i class="fa-solid fa-house-circle-check mr-2 text-2xl"></i>
+                <div>Followed Sellers</div>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="#" class="flex justify-between  block py-3 ">
+            <div class="flex items-center">
+                <i class="fa-solid fa-clock-rotate-left mr-2 text-2xl"></i>
+                <div>Recently Viewed</div>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
+    </div>
+    <div class="bg-gray-200 pl-3 text-sm p-2">ACCOUNT SETTINGS</div>
+    <a href="save" class="flex justify-between  block py-6 ">
+        <div class="flex items-center px-3 text-sm">
+            <div>Account Management</div>
+        </div>
+        <i class="fa-solid fa-angle-right pr-4"></i>
+    </a>
+    <a href="save" class="flex justify-between  block py-4 ">
+        <div class="flex items-center px-3 text-sm">
+            <div>Address Bookt</div>
+        </div>
+        <i class="fa-solid fa-angle-right pr-4"></i>
+    </a>
+    <a href="save" class="flex justify-between  block py-4 ">
+        <div class="flex items-center px-3 text-sm">
+            <div>Close Account</div>
+        </div>
+        <i class="fa-solid fa-angle-right pr-4"></i>
+    </a>
+    <a href=""> <div class="bg-gray-200 py-6 text-center text-orange-500 ">LOGOUT</div></a>
+</div>
+    <div class="flex bg-black pt-2 pl-3 text-xs">
+        <div class="text-white px-3">
+            <a href="#">CHAT WITH US</a>
+        </div>
+        <div class="text-white px-3">
+            <a href="#">HELP CENTER</a>
+        </div>
+        <div class="text-white">
+            <a href="#">CONTACT US</a>
+        </div>
+    </div>
+        <div class="flex bg-black pt-2 pl-5 text-xs">
+            <div class="text-white px-3">
+                <a href="#">TERMS & CONDITIONS</a>
+            </div>
+            <div class="text-white px-3">
+                <a href="#">PRIVACY NOTICE</a>
+            </div>
+        </div>
+        <div class="flex bg-black pt-2 pl-8 text-xs">
+            <div class="text-white px-3">
+                <a href="#">COOKIE NOTICE</a>
+            </div>
+            <div class="text-white px-3">
+                <a href="#">BECOME A SELLER</a>
+            </div>
+        </div>
+        <div class="flex bg-black pt-2  text-xs">
+            <div class="text-white px-3">
+                <a href="#">REPORT A PRODUCT</a>
+            </div>
+            <div class="text-white px-3">
+                <a href="#">JUMIA ANNIVERSARY 2024</a>
+            </div>
+        </div>
+    </div>
+<!--Mobile view ends here-->
+</div>
 </body>
 </html>
