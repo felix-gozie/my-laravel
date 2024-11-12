@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="hidden md:block">
-        <div class="py-4 bg-gray-100 grid grid-cols-2">
+        <div class="py-4 bg-gray-100 grid grid-cols-2 hidden md:grid">
             <div class="flex items-center justify-center mr-[49%] space-x-2">
                 <div class="h-6 w-6 bg-orange-400 text-white rounded-full flex items-center justify-center">
                     <i class="fa fa-star text-xs"></i>
@@ -25,7 +24,7 @@
         </div>
 
         @include('nav.nav_describe')
-
+    <div class="hidden md:block">
         <div class="bg-gray-100 pt-5 pl-[7%] flex space-x-4">
             <div class="w-[25%] shadow-lg bg-white rounded-lg">
                 <a href="#" class="block px-4 py-2 bg-gray-300 rounded-sm">

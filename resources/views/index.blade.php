@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="bg-gray-100">
+<div class="py-4 bg-gray-100 grid grid-cols-2 hidden md:grid">
+            <div class="flex items-center justify-center mr-[49%] space-x-2">
+                <div class="h-6 w-6 bg-orange-400 text-white rounded-full flex items-center justify-center">
+                    <i class="fa fa-star text-xs"></i>
+                </div>
+                <a href="#" class="text-xl text-orange-500">Sell on Jumia</a>
+            </div>
+            <div class="flex items-center justify-center space-x-2 pr-[80%]">
+                <a class="text-lg font-bold text-black">Jumia</a>
+                <div class="h-6 w-6 bg-orange-400 text-white rounded-full flex items-center justify-center">
+                    <i class="fa fa-star text-xs"></i>
+                </div>
+            </div>
+        </div>
     @include('nav.nav_main')
     <div class="flex flex-wrap gap-4 mt-4">
         <div class="hidden md:block ml-[4%]">
