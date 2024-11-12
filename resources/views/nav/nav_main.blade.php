@@ -1,61 +1,61 @@
 
 <div class="hidden md:block w-full bg-white z-50 sticky top-0 mb-[1%]">
     <div class="relative flex items-center w-[92%] pb-3 pl-[7%] pt-4 ">
-            <a href="" class="text-4xl font-bold text-black">JUMIA</a>
-            <div class="bg-orange-500 rounded-full py-1 mr-[93px] px-2">
-                <i class="fa fa-star text-white"></i>
-            </div>
-            <div class="relative flex-grow max-w-[50%]">
-                <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                    <img class="w-5 h-5" src="icons/icons8-search-50.png">
-                </span>
-                <input class="placeholder:italic rounded-md placeholder:text-slate-400 block bg-white w-full border border-slate-300 py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 sm:text-lg" placeholder="Search products, brands and categories..." type="text" name="search"/>
-            </div>
-
-            <button class="block bg-orange-500 py-2 ml-2 shadow-lg px-4 rounded-md text-white hover:bg-orange-700">SEARCH</button>
-            
-            <div class="flex items-center ml-4 relative">
-    <div class="group">
-        <a href="#">
-            <span class="flex items-center hover:text-orange-500">
-                <i class="fa-solid fa-user text-2xl"></i>
-                @if(Auth::check())
-                    <span class="font-bold ml-1">Account Hi, {{ Auth::user()->fname }}</span>
-                @else
-                    <span class="font-bold ml-1">Account Hi, Guest</span>
-                @endif
-            </span>
-        </a>
-        
-        <!-- Dropdown menu for logged-in users -->
-        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg w-[200px] py-8 shadow-lg">
-            @if(Auth::check())
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
-                    <i class="fa-solid fa-user mr-2 text-2xl"></i> My Account
-                </a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
-                    <i class="fa-solid fa-box mr-2 text-2xl"></i> Orders
-                </a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
-                    <i class="fa-solid fa-heart mr-2 text-2xl"></i> Saved Items
-                </a>
-                <a href="/logout" class="block px-4 py-2 text-white bg-orange-500 hover:bg-orange-700 shadow-lg rounded-md text-center">
-                    Logout
-                </a>
-            @else
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
-                    <i class="fa-solid fa-box mr-2 text-2xl"></i> Orders
-                </a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
-                    <i class="fa-solid fa-heart mr-2 text-2xl"></i> Saved Items
-                </a>
-                <a href="/login" class="block px-4 py-2 text-white bg-orange-500 hover:bg-orange-700 shadow-lg rounded-md text-center">
-                    Login
-                </a>
-            @endif
+        <a href="" class="text-4xl font-bold text-black">JUMIA</a>
+        <div class="bg-orange-500 rounded-full py-1 mr-[93px] px-2">
+            <i class="fa fa-star text-white"></i>
         </div>
-    </div>
-</div>
+        <div class="relative flex-grow max-w-[50%]">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                <img class="w-5 h-5" src="icons/icons8-search-50.png">
+            </span>
+            <input class="placeholder:italic rounded-md placeholder:text-slate-400 block bg-white w-full border border-slate-300 py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 sm:text-lg" placeholder="Search products, brands and categories..." type="text" name="search"/>
+        </div>
+
+        <button class="block bg-orange-500 py-2 ml-2 shadow-lg px-4 rounded-md text-white hover:bg-orange-700">SEARCH</button>
+            
+        <div class="flex items-center ml-4 relative">
+            <div class="group">
+            <a href="#">
+                <span class="flex items-center hover:text-orange-500">
+                    <i class="fa-solid fa-user text-2xl"></i>
+                    @if(Auth::check())
+                        <span class="font-bold ml-1">Account Hi, {{ Auth::user()->fname }}</span>
+                    @else
+                        <span class="font-bold ml-1">Account Hi, Guest</span>
+                    @endif
+                </span>
+            </a>
+            
+            <!-- Dropdown menu for logged-in users -->
+            <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg w-[200px] py-8 shadow-lg">
+                @if(Auth::check())
+                    <a href="myaccount" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+                        <i class="fa-solid fa-user mr-2 text-2xl"></i> My Account
+                    </a>
+                    <a href="orders" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+                        <i class="fa-solid fa-box mr-2 text-2xl"></i> Orders
+                    </a>
+                    <a href="save" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+                        <i class="fa-solid fa-heart mr-2 text-2xl"></i> Saved Items
+                    </a>
+                    <a href="/logout" class="block px-4 py-2 text-white bg-orange-500 hover:bg-orange-700 shadow-lg rounded-md text-center">
+                        Logout
+                    </a>
+                @else
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+                        <i class="fa-solid fa-box mr-2 text-2xl"></i> Orders
+                    </a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+                        <i class="fa-solid fa-heart mr-2 text-2xl"></i> Saved Items
+                    </a>
+                    <a href="/login" class="block px-4 py-2 text-white bg-orange-500 hover:bg-orange-700 shadow-lg rounded-md text-center">
+                        Login
+                    </a>
+                @endif
+            </div>
+            </div>
+        </div>
 
             
             <div class="flex items-center ml-4 relative">
@@ -66,7 +66,7 @@
                         </span>
                     </a>
                     <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg p-6 w-[250px] py-8 shadow-lg">
-                        <a href="help.php" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+                        <a href="help" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
                             <i class="text-2xl"></i>Help Center
                         </a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Place an order</a>

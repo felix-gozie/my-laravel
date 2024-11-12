@@ -31,33 +31,48 @@
     </div>
     <button class="bg-orange-500 py-2 ml-2 shadow-lg px-4 rounded-md text-white hover:bg-orange-700">SEARCH</button>
     <div class="flex items-center ml-4 relative">
-        <div class="group">
+            <div class="group">
             <a href="#">
                 <span class="flex items-center hover:text-orange-500">
                     <i class="fa-solid fa-user text-2xl"></i>
                     @if(Auth::check())
-                        <span class="font-bold ml-1">Account Hi, {{Auth::user()->fname }}</span>
+                        <span class="font-bold ml-1">Account Hi, {{ Auth::user()->fname }}</span>
                     @else
                         <span class="font-bold ml-1">Account Hi, Guest</span>
                     @endif
                 </span>
             </a>
-
-            <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg  w-[200px] py-8 shadow-lg">
-                
-                    <a href="{{ route('register') }}" class="block px-4 py-2 text-white bg-orange-500 hover:bg-orange-700 shadow-lg rounded-md text-center">Sign In</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+            
+            <!-- Dropdown menu for logged-in users -->
+            <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg w-[200px] py-8 shadow-lg">
+                @if(Auth::check())
+                    <a href="myaccount" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
                         <i class="fa-solid fa-user mr-2 text-2xl"></i> My Account
                     </a>
+                    <a href="orders" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+                        <i class="fa-solid fa-box mr-2 text-2xl"></i> Orders
+                    </a>
+                    <a href="save" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+                        <i class="fa-solid fa-heart mr-2 text-2xl"></i> Saved Items
+                    </a>
+                    <a href="/logout" class="block px-4 py-2 text-white bg-orange-500 hover:bg-orange-700 shadow-lg rounded-md text-center">
+                        Logout
+                    </a>
+                @else
                     <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
                         <i class="fa-solid fa-box mr-2 text-2xl"></i> Orders
                     </a>
                     <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
-                        <i class="fa-solid fa-heart mr-1 text-2xl"></i> Saved Items
+                        <i class="fa-solid fa-heart mr-2 text-2xl"></i> Saved Items
                     </a>
+                    <a href="/login" class="block px-4 py-2 text-white bg-orange-500 hover:bg-orange-700 shadow-lg rounded-md text-center">
+                        Login
+                    </a>
+                @endif
+            </div>
             </div>
         </div>
-    </div>
+
     <div class="flex items-center ml-4 relative">
         <div class="group">
             <a href="#">
@@ -241,7 +256,6 @@
         </div>
     </div>
 </div>
-@include('image_display', ['products' => $products])
 <script>
     // Elements
     const menuToggle = document.getElementById('menu-toggle');

@@ -30,10 +30,10 @@
             <a href="#" class="block px-4 py-2 bg-gray-300 rounded-sm">
                 <i class="fa-solid fa-user mr-2 text-2xl font-semibold"></i>My Jumia Account
             </a>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+            <a href="orders" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
                 <i class="fa-solid fa-box mr-2 text-2xl"></i>Orders
             </a>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+            <a href="inbox" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
                 <i class="fa-solid fa-envelope mr-2 text-2xl"></i>Inbox
             </a>
             <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
@@ -45,10 +45,10 @@
             <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
                 <i class="fa-solid fa-shop mr-2 text-2xl"></i>Followed Sellers
             </a>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+            <a href="save" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
                 <i class="fa-solid fa-heart mr-2 text-2xl"></i>Saved Items
             </a>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+            <a href="voucher" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
                 <i class="fa-solid fa-ticket mr-2 text-2xl"></i>Voucher
             </a>
             <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Account Management</a>
