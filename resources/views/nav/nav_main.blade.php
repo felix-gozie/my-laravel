@@ -149,22 +149,22 @@
                     <i class="fa-solid fa-angle-right"></i>
                 </div>
                 <div class="flex justify-between items-center py-3">
-                    <a href="#" class="text-gray-800 font-semibold hover:text-orange-500">MY JUMIA ACCOUNT</a>
+                    <a href="myaccount" class="text-gray-800 font-semibold hover:text-orange-500">MY JUMIA ACCOUNT</a>
                     <i class="fa-solid fa-angle-right"></i>
                 </div>
-                <a href="orders.php" class="block py-2 hover:bg-gray-100 rounded-md flex items-center">
+                <a href="orders" class="block py-2 hover:bg-gray-100 rounded-md flex items-center">
                     <i class="fa-solid fa-box mr-2 text-2xl"></i>Orders
                 </a>
-                <a href="inbox.php" class="block py-2 hover:bg-gray-100 rounded-md flex items-center">
+                <a href="inbox" class="block py-2 hover:bg-gray-100 rounded-md flex items-center">
                     <i class="fa-solid fa-envelope mr-2 text-2xl"></i>Inbox
                 </a>
                 <a href="#" class="block py-2 hover:bg-gray-100 rounded-md flex items-center">
                     <i class="fa-solid fa-message mr-2 text-2xl"></i>Pending Reviews
                 </a>
-                <a href="voucher.php" class="block py-2 hover:bg-gray-100 rounded-md flex items-center">
+                <a href="voucher" class="block py-2 hover:bg-gray-100 rounded-md flex items-center">
                     <i class="fa-solid fa-ticket mr-2 text-2xl"></i>Voucher
                 </a>
-                <a href="save.php" class="block py-2 hover:bg-gray-100 rounded-md flex items-center">
+                <a href="save" class="block py-2 hover:bg-gray-100 rounded-md flex items-center">
                     <i class="fa-solid fa-heart mr-2 text-2xl"></i>Saved Items
                 </a>
             </div>
