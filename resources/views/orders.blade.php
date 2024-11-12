@@ -24,13 +24,13 @@
     </div>
 
     @include('nav.nav_describe')
-    <div class="hidden md">
+    <div class="hidden md:block">
         <div class="bg-gray-100 pt-5 pl-[7%] flex space-x-4">
             <div class="w-[25%] shadow-lg bg-white rounded-lg">
                 <a href="myaccount.php" class="block px-4 py-2 bg-gray-300 rounded-sm">
                     <i class="fa-solid fa-user mr-2 text-2xl font-semibold"></i>My Jumia Account
                 </a>
-                <a href="orders.php" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
+                <a href="orders" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
                     <i class="fa-solid fa-box mr-2 text-2xl"></i>Orders
                 </a>
                 <a href="inbox.php" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
@@ -191,51 +191,53 @@
     </div>
 
     <!--Mobile view started here -->
-    <div class="bg-orange-200 p-2 pl-3">
-        <p class="text-sm ">Help Center</p>
-        <p class="text-sm ">Place an Order</p>
-        <p class="text-sm ">You can try to find your problem here or contact us</p>
-        <div class="relative mt-2">
-            <i class="absolute fa-solid fa-magnifying-glass text-gray-500 m-2"></i>
-            <input type="text" placeholder='Type keywords like "return"' class="rounded-md text-sm pl-8 border-none focus:outline-none py-2 px-2 placeholder-gray-500 text-black w-full" />
+    <div class="block md:hidden">
+        <div class="bg-orange-200 p-2 pl-3">
+            <p class="text-sm ">Help Center</p>
+            <p class="text-sm ">Place an Order</p>
+            <p class="text-sm ">You can try to find your problem here or contact us</p>
+            <div class="relative mt-2">
+                <i class="absolute fa-solid fa-magnifying-glass text-gray-500 m-2"></i>
+                <input type="text" placeholder='Type keywords like "return"' class="rounded-md text-sm pl-8 border-none focus:outline-none py-2 px-2 placeholder-gray-500 text-black w-full" />
+            </div>
         </div>
-    </div>
-    <div class="bg-gray-100">
-        <p class="font-bold p-3">how to place an order</p>
-    </div>
-    <div class="flex bg-black pt-2 pl-3 text-xs">
-        <div class="text-white px-3">
-            <a href="#">CHAT WITH US</a>
+        <div class="bg-gray-100">
+            <p class="font-bold p-3">how to place an order</p>
         </div>
-        <div class="text-white px-3">
-            <a href="#">HELP CENTER</a>
+        <div class="flex bg-black pt-2 pl-3 text-xs">
+            <div class="text-white px-3">
+                <a href="#">CHAT WITH US</a>
+            </div>
+            <div class="text-white px-3">
+                <a href="#">HELP CENTER</a>
+            </div>
+            <div class="text-white">
+                <a href="#">CONTACT US</a>
+            </div>
         </div>
-        <div class="text-white">
-            <a href="#">CONTACT US</a>
+        <div class="flex bg-black pt-2 pl-5 text-xs">
+            <div class="text-white px-3">
+                <a href="#">TERMS & CONDITIONS</a>
+            </div>
+            <div class="text-white px-3">
+                <a href="#">PRIVACY NOTICE</a>
+            </div>
         </div>
-    </div>
-    <div class="flex bg-black pt-2 pl-5 text-xs">
-        <div class="text-white px-3">
-            <a href="#">TERMS & CONDITIONS</a>
+        <div class="flex bg-black pt-2 pl-8 text-xs">
+            <div class="text-white px-3">
+                <a href="#">COOKIE NOTICE</a>
+            </div>
+            <div class="text-white px-3">
+                <a href="#">BECOME A SELLER</a>
+            </div>
         </div>
-        <div class="text-white px-3">
-            <a href="#">PRIVACY NOTICE</a>
-        </div>
-    </div>
-    <div class="flex bg-black pt-2 pl-8 text-xs">
-        <div class="text-white px-3">
-            <a href="#">COOKIE NOTICE</a>
-        </div>
-        <div class="text-white px-3">
-            <a href="#">BECOME A SELLER</a>
-        </div>
-    </div>
-    <div class="flex bg-black pt-2  text-xs">
-        <div class="text-white px-3">
-            <a href="#">REPORT A PRODUCT</a>
-        </div>
-        <div class="text-white px-3">
-            <a href="#">JUMIA ANNIVERSARY 2024</a>
+        <div class="flex bg-black pt-2  text-xs">
+            <div class="text-white px-3">
+                <a href="#">REPORT A PRODUCT</a>
+            </div>
+            <div class="text-white px-3">
+                <a href="#">JUMIA ANNIVERSARY 2024</a>
+            </div>
         </div>
     </div>
     <!--Mobile view ends here-->
