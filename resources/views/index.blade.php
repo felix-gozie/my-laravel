@@ -28,15 +28,18 @@
             @include('nav.nav_product')
         </div>
         @foreach($products as $product)
-            <div class="w-64 bg-white p-4 shadow-lg rounded-lg text-center">
-                <h2 class="text-xl font-semibold mb-2">{{ $product->name }}</h2>
-                @if($product->image_path)
-                    <img src="{{ asset('storage/' . $product->image_path) }}" alt="{{ $product->name }}" class="w-full h-auto mb-4 rounded-md">
-                @endif
-                <p class="text-lg text-gray-700">Price: ${{ $product->price }}</p>
-                <p class="text-sm text-gray-500">{{ $product->description }}</p>
-            </div>
-        @endforeach
+    <div class="w-64 bg-white p-4 shadow-lg rounded-lg text-center">
+        <!-- Link to the product details page when clicking the image -->
+        <a href="{{ route('product.show', $product->id) }}">
+            @if($product->image_path)
+                <img src="{{ asset('storage/' . $product->image_path) }}" alt="{{ $product->name }}" class="w-full h-auto rounded-md">
+            @endif
+            <h5 class="text-xl font-semibold mb-2">{{ $product->name }}</h5>
+        </a>
+        <p class="text-lg text-gray-700">Price: ${{ $product->price }}</p>   
+    </div>
+@endforeach
+
     </div>    
 </body>
 </html>

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\productController;
 use App\Http\Controllers\FileUploadController;
 
 
@@ -29,4 +30,5 @@ Route::post('/register', [RegisterController::class, 'register'])->name('registe
 Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/loginform', [LoginController::class, 'showLoginForm'])->name('loginform');
+Route::get('/product/{id}', [ProductController::class, 'show'])->name('product.show');
 

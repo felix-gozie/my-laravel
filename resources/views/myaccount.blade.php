@@ -285,7 +285,7 @@
         <i class="fa-solid fa-angle-right pr-4"></i>
     </a>
     <a href=""> <div class="bg-gray-200 py-6 text-center text-orange-500 ">LOGOUT</div></a>
-</div>
+
     <div class="flex bg-black pt-2 pl-3 text-xs">
         <div class="text-white px-3">
             <a href="#">CHAT WITH US</a>
@@ -315,14 +315,13 @@
         </div>
         <div class="flex bg-black pt-2  text-xs">
             <div class="text-white px-3">
-                <a href="#">REPORT A PRODUCT</a>
-            </div>
-            <div class="text-white px-3">
-                <a href="#">JUMIA ANNIVERSARY 2024</a>
-            </div>
+            <a href="#">REPORT A PRODUCT</a>
+        </div>
+        <div class="text-white px-3">
+            <a href="#">JUMIA ANNIVERSARY 2024</a>
         </div>
     </div>
-<!--Mobile view ends here-->
 </div>
+<!--Mobile view ends here-->
 </body>
 </html>

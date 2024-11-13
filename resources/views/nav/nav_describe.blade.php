@@ -1,6 +1,4 @@
-<?php
-    session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +11,7 @@
 <body>
 <div class="relative flex hidden md:flex items-center w-full px-[7%] py-4 bg-white z-50 sticky top-0">
     <div class="group relative flex items-center">
-        <a href="header.php" class="flex items-center text-4xl font-bold text-black">
+        <a href="index" class="flex items-center text-4xl font-bold text-black">
             <i class="fa-solid fa-bars text-2xl mr-2 hover:text-orange-500"></i>JUMIA
         </a>
         <div class="absolute hidden group-hover:block  w-full py-8 left-0 top-full">
@@ -131,6 +129,22 @@
         </div>
     </div>
 </nav>
+
+
+
+
+@if(isset($product))
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold">{{ $product->name }}</h1>
+        <p class="text-lg mt-2">{{ $product->description }}</p>
+        <p class="text-lg font-semibold mt-2">Price: ${{ $product->price }}</p>
+        <img src="{{ asset('storage/' . $product->image_path) }}" alt="{{ $product->name }}" class="w-full max-w-sm mt-4">
+    </div>
+@else
+    <p class="text-center text-lg mt-4">No product selected.</p>
+@endif
+
+
 
 
 <!-- Sliding Side Menu -->
