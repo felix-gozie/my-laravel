@@ -8,7 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100">
+    <div class="py-4 bg-gray-100 grid grid-cols-2 hidden md:grid">
+            <div class="flex items-center justify-center mr-[49%] space-x-2">
+                <div class="h-6 w-6 bg-orange-400 text-white rounded-full flex items-center justify-center">
+                    <i class="fa fa-star text-xs"></i>
+                </div>
+                <a href="#" class="text-xl text-orange-500">Sell on Jumia</a>
+            </div>
+        <div class="flex items-center justify-center space-x-2 pr-[80%]">
+            <a class="text-lg font-bold text-black">Jumia</a>
+            <div class="h-6 w-6 bg-orange-400 text-white rounded-full flex items-center justify-center">
+                <i class="fa fa-star text-xs"></i>
+            </div>
+        </div>
+    </div>
 <div class="relative flex hidden md:flex items-center w-full px-[7%] py-4 bg-white z-50 sticky top-0">
     <div class="group relative flex items-center">
         <a href="index" class="flex items-center text-4xl font-bold text-black">
@@ -129,24 +143,6 @@
         </div>
     </div>
 </nav>
-
-
-
-
-@if(isset($product))
-    <div class="container mx-auto p-4">
-        <h1 class="text-2xl font-bold">{{ $product->name }}</h1>
-        <p class="text-lg mt-2">{{ $product->description }}</p>
-        <p class="text-lg font-semibold mt-2">Price: ${{ $product->price }}</p>
-        <img src="{{ asset('storage/' . $product->image_path) }}" alt="{{ $product->name }}" class="w-full max-w-sm mt-4">
-    </div>
-@else
-    <p class="text-center text-lg mt-4">No product selected.</p>
-@endif
-
-
-
-
 <!-- Sliding Side Menu -->
 <div id="side-menu" class="fixed top-0 -left-full bg-white z-20 w-[80%] h-full shadow-lg transition-all duration-300 ease-in-out overflow-y-auto">
     <div class="py-2 px-4 flex flex-col h-full">
@@ -270,6 +266,24 @@
         </div>
     </div>
 </div>
+
+<!--Code to display product on the nav_describe.blade.php-->
+@if(isset($product))
+<div class="container pl-[7%] pt-3">
+<div class="bg-white p-4 rounded-md flex items-start max-w-4xl ">
+    <img src="{{ asset('storage/' . $product->image_path) }}" alt="{{ $product->name }}" class="max-w-sm mr-6 rounded-md">
+    <div>
+        <h1 class="text-2xl font-bold">{{ $product->name }}</h1>
+        <p class="text-lg mt-2">{{ $product->description }}</p>
+        <p class="text-lg font-semibold mt-2">Price: ${{ $product->price }}</p>
+    </div>
+</div>
+
+</div>
+@else
+    <p class="text-center text-lg mt-4">No product selected.</p>
+@endif
+<!--it ends here-->
 <script>
     // Elements
     const menuToggle = document.getElementById('menu-toggle');

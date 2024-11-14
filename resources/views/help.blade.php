@@ -7,21 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white md:bg-gray-200">
-    <div class="py-4 bg-gray-100 grid grid-cols-2">
-        <div class="flex hidden md:flex items-center justify-center mr-[49%] space-x-2">
-            <div class="h-6 w-6 bg-orange-400 text-white rounded-full flex items-center justify-center">
-                <i class="fa fa-star text-xs"></i>
-            </div>
-            <a href="#" class="text-xl text-orange-500">Sell on Jumia</a>
-        </div>
-        <div class="flex items-center justify-center space-x-2 pr-[80%]">
-            <a class="text-lg font-bold text-black">Jumia</a>
-            <div class="h-6 w-6 bg-orange-400 text-white rounded-full flex items-center justify-center">
-                <i class="fa fa-star text-xs"></i>
-            </div>
-        </div>
-    </div>
+<body class="bg-white md:bg-gray-100">
     @include('nav.nav_describe')
     <div class="relative hidden md:block bg-orange-200 h-40 pl-[7%] mt-2">
         <div class="pt-5 font-bold">Help Center</div>
