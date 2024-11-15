@@ -69,7 +69,7 @@
                         <a href="help" class="block px-4 py-2 hover:bg-gray-100 rounded-md">
                             <i class="text-2xl"></i>Help Center
                         </a>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Place an order</a>
+                        <a href="placeorder" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Place an order</a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Payment options</a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Track an order</a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Cancel an order</a>

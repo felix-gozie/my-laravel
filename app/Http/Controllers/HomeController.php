@@ -39,5 +39,8 @@ class HomeController extends Controller
     public function select(){
         return view('select');
     }
+    public function placeorder(){
+        return view('placeorder');
+    }
 }
 
