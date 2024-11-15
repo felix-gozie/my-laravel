@@ -106,7 +106,7 @@
                 </div>
             </div>
             <div class="flex items-center ml-auto">
-                <a href="myaccount.php" class="text-gray-800">
+                <a href="myaccount" class="text-gray-800">
                     <i class="fa-solid fa-user text-2xl hover:text-orange-500"></i>
                 </a>
                 <a href="#" class="text-gray-800 ml-4">

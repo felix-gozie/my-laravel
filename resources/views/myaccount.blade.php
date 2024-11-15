@@ -56,7 +56,7 @@
                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Newsletter Preferences</a>
                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Close Account</a>
                 <div class="flex justify-center mt-4 w-auto">
-                    <a href="logout.php" class="block px-4 py-2 hover:bg-orange-200 text-center text-orange-500 rounded-md">
+                    <a href="logout" class="block px-4 py-2 hover:bg-orange-200 text-center text-orange-500 rounded-md">
                         Logout
                     </a>
                 </div>
@@ -284,7 +284,7 @@
         </div>
         <i class="fa-solid fa-angle-right pr-4"></i>
     </a>
-    <a href=""> <div class="bg-gray-200 py-6 text-center text-orange-500 ">LOGOUT</div></a>
+    <a href="logout"> <div class="bg-gray-200 py-6 text-center text-orange-500 ">LOGOUT</div></a>
 
     <div class="flex bg-black pt-2 pl-3 text-xs">
         <div class="text-white px-3">
