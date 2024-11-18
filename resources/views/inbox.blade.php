@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inbox Messages</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+@extends('layout', ['page_title' => 'Inbox Messages'])
+
+@section('content')
     <div class="py-4 bg-gray-100 grid grid-cols-2">
         <div class="hidden md:flex items-center justify-center mr-[49%] space-x-2">
             <div class="h-6 w-6 bg-orange-400 text-white rounded-full flex items-center justify-center">
@@ -228,5 +221,4 @@
         </div>
     </div>
     <!--Mobile view ends here-->
-</body>
-</html>
+@endsection

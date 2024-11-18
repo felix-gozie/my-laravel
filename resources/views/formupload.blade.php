@@ -1,13 +1,7 @@
 
-<!-- resources/views/formupload.blade.php -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Upload</title>
-</head>
-<body>
+@extends('layout', ['page_title' => 'File Upload'])
+
+@section('content')
     <h2>File Upload Form</h2>
 
     <!-- Display success message -->
@@ -47,5 +41,4 @@
 
         <button type="submit">Upload</button>
     </form>
-</body>
-</html>
+@endsection

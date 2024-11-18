@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white md:bg-gray-100">
+@extends('layout', ['page_title' => 'Help'])
+
+@section('content')
+    <div class="bg-white md:bg-gray-100">
     @include('nav.nav_describe')
     <div class="relative hidden md:block">
         <div class=" bg-orange-200 h-40 pl-[7%] mt-2">
@@ -319,6 +313,6 @@
             </div>
         </div>
     </div>
+    </div>
     <!--Mobile view ends here-->
-</body>
-</html>
+@endsection

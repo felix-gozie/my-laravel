@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My account</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+@extends('layout', ['page_title' => 'My Account'])
+
+@section('content')
         <div class="py-4 bg-gray-100 grid grid-cols-2 hidden md:grid">
             <div class="flex items-center justify-center mr-[49%] space-x-2">
                 <div class="h-6 w-6 bg-orange-400 text-white rounded-full flex items-center justify-center">
@@ -323,5 +316,4 @@
     </div>
 </div>
 <!--Mobile view ends here-->
-</body>
-</html>
+@endsection
