@@ -14,7 +14,7 @@ class productController extends Controller
     $product = Product::findOrFail($id);
     
     // Pass the product data to the 'nav_describe' view
-    return view('nav.nav_describe', compact('product'));
+    return view('product', compact('product'));
 }
 
 }
