@@ -42,5 +42,8 @@ class HomeController extends Controller
     public function placeorder(){
         return view('placeorder');
     }
+    public function payment(){
+        return view('payment');
+    }
 }
 

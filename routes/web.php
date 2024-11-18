@@ -17,6 +17,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/save', 'save')->name('save');
     Route::get('/voucher', 'voucher')->name('voucher');
     Route::get('/placeorder', 'placeorder')->name('placeorder');
+    Route::get('/payment', 'payment')->name('payment');
 });
 
 Route::get('/formupload', [FileUploadController::class, 'create'])->name('file.upload.form');
