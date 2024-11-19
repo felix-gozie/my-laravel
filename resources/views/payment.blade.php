@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="bg-white md:bg-gray-100">
-        @include('nav.nav_describe')
+        @include('nav.nav_main')
         <div class="relative hidden md:block">
             <div class=" bg-orange-200 h-40 pl-[7%] mt-2">
                 <div class="pt-5 font-bold">Help Center</div>

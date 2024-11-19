@@ -17,7 +17,7 @@
     </div>
 
     <div class="hidden md:block">
-        @include('nav.nav_describe')
+        @include('nav.nav_main')
     </div>
 
     <div class="hidden md:block">

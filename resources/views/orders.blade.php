@@ -2,7 +2,7 @@
 
 @section('content')
 
-    @include('nav.nav_describe')
+    @include('nav.nav_main')
     <div class="hidden md:block">
         <div class="bg-gray-100 pt-5 pl-[7%] flex space-x-4">
             <div class="w-[25%] shadow-lg bg-white rounded-lg">
