@@ -20,6 +20,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/payment', 'payment')->name('payment');
 });
 
+
 Route::get('/formupload', [FileUploadController::class, 'create'])->name('file.upload.form');
 Route::post('/formupload', [FileUploadController::class, 'store'])->name('file.upload.store');
 Route::post('/product/upload', [FileUploadController::class, 'upload'])->name('product.upload');

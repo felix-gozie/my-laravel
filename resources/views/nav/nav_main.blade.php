@@ -1,7 +1,7 @@
 
 <div class="hidden md:block w-full bg-white z-50 sticky top-0 mb-[1%]">
     <div class="relative flex items-center w-[92%] pb-3 pl-[7%] pt-4 ">
-        <a href="" class="text-4xl font-bold text-black">JUMIA</a>
+        <a href="{{route('index')}}" class="text-4xl font-bold text-black">JUMIA</a>
         <div class="bg-orange-500 rounded-full py-1 mr-[93px] px-2">
             <i class="fa fa-star text-white"></i>
         </div>

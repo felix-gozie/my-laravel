@@ -18,9 +18,10 @@
         </div>
     <div class="relative flex hidden md:flex items-center w-full px-[7%] py-4 bg-white z-50 sticky top-0">
         <div class="group relative flex items-center">
-            <a href="index" class="flex items-center text-4xl font-bold text-black">
-                <i class="fa-solid fa-bars text-2xl mr-2 hover:text-orange-500"></i>JUMIA
-            </a>
+        <a href="{{ route('index') }}" class="flex items-center text-4xl font-bold text-black">
+            <i class="fa-solid fa-bars text-2xl mr-2 hover:text-orange-500"></i>JUMIA
+        </a>
+
             <div class="absolute hidden group-hover:block  w-full py-8 left-0 top-full">
                 @include('nav.nav_product')
             </div>
