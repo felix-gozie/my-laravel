@@ -18,6 +18,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/voucher', 'voucher')->name('voucher');
     Route::get('/placeorder', 'placeorder')->name('placeorder');
     Route::get('/payment', 'payment')->name('payment');
+    Route::get('/track', 'track')->name('track');
 });
 
 

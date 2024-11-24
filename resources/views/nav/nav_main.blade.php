@@ -71,7 +71,7 @@
                         </a>
                         <a href="placeorder" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Place an order</a>
                         <a href="payment" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Payment options</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Track an order</a>
+                        <a href="track" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Track an order</a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Cancel an order</a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Returns & Refunds</a>
                         <a href="#" class="block px-4 py-2 text-white bg-orange-500 hover:bg-orange-700 rounded-md text-center shadow-lg mt-4">Live Chat</a>
