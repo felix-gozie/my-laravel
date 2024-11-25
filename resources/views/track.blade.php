@@ -84,6 +84,25 @@
                 <div class="text-lg font-bold">Delivery timelines</div>
                 <div class="text-lg">Bussiness days are <span class="font-bold">Monday - Friday</span>(In addition to <strong>saturday</strong> for jumia express and standard shipping orders delivered to lagos, Ibadan and Abeokuta)</div>
                 <div class="text-lg">The below delivery timelines are for orders placed <strong>before 2pm.</strong> Note that orders placed after 2pm are<strong> +1 day added to the delivery timelines.</strong> </div>
+                <div class="flex space-x-12">
+                    <div class="flex flex-col font-bold text-gray-700 text-center">
+                        <div class="font-bold text-gray-700">JUMIA</div>
+                        <div class="font-bold text-gray-700">EXPRESS</div>
+                        <div class="w-20 h-10 bg-gray-400 mt-2">Bussines day(s)</div>
+                    </div>
+                    <div class="flex flex-col font-bold text-gray-700">
+                        <div class="font-bold text-gray-700">STANDARD</div>
+                        <div class="font-bold text-gray-700">SHIPPING</div>
+                    </div>
+                    <div class="flex flex-col font-bold text-gray-700">
+                        <div class="font-bold text-gray-700">JUMIA</div>
+                        <div class="font-bold text-gray-700">EXPRESS</div>
+                    </div>
+                    <div class="flex flex-col font-bold text-gray-700">
+                        <div class="font-bold text-gray-700">STANDARD</div>
+                        <div class="font-bold text-gray-700">SHIPPING</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="py-4 bg-black">

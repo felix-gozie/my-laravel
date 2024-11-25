@@ -48,5 +48,11 @@ class HomeController extends Controller
     public function track(){
         return view('track');
     }
+    public function edit(){
+        return view('edit');
+    }
+    public function delete(){
+        return view('delete');
+    }
 }
 

@@ -47,6 +47,6 @@ class FileUploadController extends Controller
     public function showDisplayImage()
     {
         $products = Product::all(); // Fetch all products with their images
-        return view('index', compact('products')); // Return the view with product data
+        return view('index')->with('products', $products); // Return the view with product data
     }
 }
