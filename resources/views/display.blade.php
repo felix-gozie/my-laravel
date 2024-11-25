@@ -1,7 +1,7 @@
 @extends('layout', ['page_title' => 'product list'])
 @section('content')
 <div class="container mx-auto p-6">
-    <h1 class="text-2xl font-bold mb-4">Product List</h1>
+    <h1 class="text-2xl font-bold mb-4 text-gray-500">Product List</h1>
 
     <table class="table-auto w-full border-collapse border border-gray-300">
         <thead>
