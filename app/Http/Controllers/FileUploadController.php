@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
-use App\Models\Product; // Add your Product model here
+use App\Models\Product;
 
 class FileUploadController extends Controller
 {

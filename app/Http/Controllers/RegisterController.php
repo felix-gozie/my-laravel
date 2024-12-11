@@ -1,7 +1,7 @@
 <?php
 //what this code does is to avoid class conflict
 namespace App\Http\Controllers;
-//this code is imported for a user to be able to perform actions on the users table
+//this code is imported for a user to be able to perform actions on the users table like adding new users to the users table and retrieving data
 use App\Models\User;
 // this code is imported to hash or encrypt password rather than a plain text
 use Illuminate\Support\Facades\Hash;
